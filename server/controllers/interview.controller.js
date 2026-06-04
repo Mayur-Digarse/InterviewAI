@@ -208,6 +208,9 @@ Make questions based on the candidate’s role, experience,interviewMode, projec
     user.credits -= 20;
     await user.save();
 
+    const difficultyMap = ["easy", "easy", "easy", "medium", "medium", "easy", "hard", "hard", "medium", "hard"];
+    const timeLimitMap = [60, 60, 60, 90, 90, 60, 120, 120, 90, 120];
+
     const interview = await Interview.create({
       userId: user._id,
       role,
@@ -216,8 +219,8 @@ Make questions based on the candidate’s role, experience,interviewMode, projec
       resumeText: safeResume,
       questions: questionsArray.map((q, index) => ({
         question: q,
-        difficulty: ["easy", "easy", "medium", "medium", "hard"][index],
-        timeLimit: [60, 60, 90, 90, 120][index],
+        difficulty: difficultyMap[index] || "medium",
+        timeLimit: timeLimitMap[index] || 90,
       }))
     })
 
