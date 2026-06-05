@@ -255,8 +255,8 @@ VITE_SERVER_URL=https://interviewai-2cj6.onrender.com
 4. Deploy
 
 **Production URLs**
-- Backend: https://interviewai-2cj6.onrender.com
-- Frontend: https://interview-yourself.vercel.app
+- Backend: https://interviewai-xl73.onrender.com
+- Frontend: https://interview-aiii.netlify.app/
 
 ---
 
