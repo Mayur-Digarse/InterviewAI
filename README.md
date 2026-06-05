@@ -1,49 +1,44 @@
-# 🤖 InterviewAI - AI-Powered Mock Interview Platform
+#  InterviewAI - AI-Powered Mock Interview Platform
+**Ace your interviews with AI-powered mock interviews, real-time feedback, and intelligent performance analytics.**
 
-![InterviewAI Banner](https://img.shields.io/badge/AI%20Interview-Platform-blue?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-green?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+## Features
 
-> **Ace your interviews with AI-powered mock interviews, real-time feedback, and intelligent performance analytics.**
-
-## ✨ Features
-
-### 🎤 Real-Time Speech Recognition
+### Real-Time Speech Recognition
 - Continuous speech-to-text conversion
 - Multi-language support (English focused)
 - Natural sentence parsing and completion tracking
 
-### 🤖 AI-Powered Intelligent Feedback
+### AI-Powered Intelligent Feedback
 - Advanced LLM-powered evaluation
 - Scoring on confidence, communication, and correctness
 - Contextual feedback tailored to your answers
 - Response time: 7-12 seconds
 
-### 📊 Performance Analytics & Reports
+### Performance Analytics & Reports
 - Detailed interview reports with scores
 - Question-wise performance breakdown
 - Progress tracking across multiple interviews
 - PDF report generation
 
-### 💳 Flexible Credit System
+### Flexible Credit System
 - Pay-per-interview model with Razorpay
 - Bonus credits on signup
 - Transparent pricing
 
-### 🔐 Secure Authentication
+### Secure Authentication
 - Google Sign-in integration
 - JWT token-based security
 - Secure session management
 - Encrypted password storage
 
-### 💾 Interview History
+### Interview History
 - Store and review past interviews
 - Compare performance over time
 - Download reports as PDF
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|------------|
@@ -60,7 +55,7 @@
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 16+ and npm
@@ -118,7 +113,7 @@ npm run dev
 
 ---
 
-## 📚 Project Structure
+## Project Structure
 
 ```
 InterviewAI/
@@ -185,7 +180,7 @@ InterviewAI/
 
 ---
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Authentication
 ```
@@ -212,47 +207,7 @@ GET    /api/interview/report/:id    # Get detailed report
 ```
 POST   /api/payment/create-order    # Create Razorpay order
 POST   /api/payment/verify          # Verify payment
-```
-
----
-
-## 🔐 Environment Variables
-
-### Backend (.env)
-```
-PORT=8000
-MONGODB_URL=mongodb+srv://user:pass@cluster.mongodb.net/db
-JWT_SECRET=your_super_secret_key_change_in_production
-OPENROUTER_API_KEY=sk-or-v1-xxxxx
-RAZORPAY_KEY_ID=razorpay_key_id
-RAZORPAY_KEY_SECRET=razorpay_key_secret
-```
-
-### Frontend (.env)
-```
-VITE_FIREBASE_APIKEY=AIzaSyxxxxx
-VITE_FIREBASE_AUTHDOMAIN=xxxxx.firebaseapp.com
-VITE_FIREBASE_PROJECTID=xxxxx
-VITE_RAZORPAY_KEY_ID=razorpay_key_id
-VITE_SERVER_URL=https://interviewai-2cj6.onrender.com
-```
-
----
-
-## 🚀 Deployment
-
-### Backend (Render)
-1. Create account on [Render](https://render.com)
-2. Connect GitHub repository
-3. Create new Web Service
-4. Set environment variables
-5. Deploy
-
-### Frontend (Vercel)
-1. Create account on [Vercel](https://vercel.com)
-2. Import GitHub repository
-3. Set environment variables
-4. Deploy
+```y
 
 **Production URLs**
 - Backend: https://interviewai-xl73.onrender.com
@@ -260,7 +215,7 @@ VITE_SERVER_URL=https://interviewai-2cj6.onrender.com
 
 ---
 
-## 🧪 Testing
+###  Testing
 
 ### Run Tests
 ```bash
@@ -283,106 +238,19 @@ npm test
 - [ ] Payment flow (sandbox mode)
 - [ ] Credits deduct correctly
 
----
-
-## 🐛 Known Issues & Fixes
-
-### Issue: 401 Unauthorized Errors
-**Status**: ✅ FIXED
-- Enabled continuous speech recognition
-- Added Authorization Bearer token headers
-- Improved isAuth middleware
-
-### Issue: Microphone Response Delays
-**Status**: ✅ FIXED
-- Changed from single-shot to continuous recognition
-- Improved answer validation
-- Optimized API response time
-
-### Issue: Inaccurate Feedback
-**Status**: ✅ FIXED
-- Full answer capture with continuous recognition
-- Better context for AI evaluation
-
----
-
-## 🔄 Recent Updates (Latest Commit)
-
-```
-✅ Fix: Authentication, microphone delays, and deployment configuration
-
-Changes:
-- Enable continuous speech recognition for complete answer capture
-- Add Authorization Bearer token header to all API requests
-- Implement answer validation (minimum 3 words)
-- Configure trust proxy for Render deployment
-- Update isAuth middleware to accept tokens from headers
-- Add .gitignore to protect sensitive files
-- Use environment variables for server URLs
-
-Testing:
-✓ Local development on http://localhost:5174
-✓ Backend API endpoints returning 200 status
-✓ Token properly stored and sent
-✓ Microphone captures full answers
-✓ Feedback appears in 7-12 seconds
-```
-
----
-
-## 📈 Performance Metrics
-
-| Metric | Target | Current |
-|--------|--------|---------|
-| Speech Recognition | < 2s | ✅ < 1s |
-| AI Feedback | < 15s | ✅ 7-12s |
-| Page Load | < 3s | ✅ ~2s |
-| API Response | < 500ms | ✅ 200-400ms |
-| Availability | > 99% | ✅ 99.5% (Render) |
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-### Development Workflow
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
-
----
-
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
-## 📧 Contact & Support
+##  Contact & Support
 
 - **GitHub**: [@Mayur-Digarse](https://github.com/Mayur-Digarse)
-- **Email**: mayurdigarse1@gmail.com
-- **Issues**: [GitHub Issues](https://github.com/Mayur-Digarse/InterviewAI/issues)
 
----
-
-## 🙏 Acknowledgments
-
-- OpenRouter for LLM API
-- Render for hosting
-- Firebase for authentication
-- Razorpay for payments
-- All contributors and testers
-
----
 
 <div align="center">
 
-**Made with ❤️ by Mayur Digarse**
-
-[⭐ Star this repo](https://github.com/Mayur-Digarse/InterviewAI/star) if you find it helpful!
+**Made with by Mayur Digarse
 
 </div>
